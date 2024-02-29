@@ -15,4 +15,4 @@ jobs:
       - name: Build the Docker image
         run: docker build . --file Dockerfile --tag simple_api:latest
       - name: Run the Docker image
-        run: docker run -p 3001:3001 --name simple_api:latest
+        run: docker run -p 3001:3001 --name simple_api:latest simple_api:latest
