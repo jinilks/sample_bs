@@ -1,0 +1,17 @@
+name: Docker Build
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build the Docker image
+        run: docker build . --file Dockerfile --tag simple_api:latest
+        run: docker run -p 3001:3001 --name simple_api simple_api:latest
