@@ -8,5 +8,5 @@ router.get("/", (req, res: any) => {
 
 router.get("/healthcheck", (req: Request, res: Response) => {
   // console.log(res.req);
-  res.send("Helth is ok");
+  res.send("Helth is ok!");
 });
