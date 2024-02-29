@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "sample_bs"
+  description: "sample application for testing the component"
+  links:
+    - url: http://localhost:3001/
+      title: My First API
+      icon: dashboard
+  annotations:
+    github.com/project-slug: jinilks/sample_bs
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  owner: guests
+  lifecycle: production
+  system: examples
